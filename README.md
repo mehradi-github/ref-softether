@@ -54,4 +54,12 @@ systemctl enable vpnserver
 systemctl start vpnserver
 
 systemctl status vpnserver
+
+# Opening necessary ports
+ufw allow 443
+ufw allow 500,4500/udp
+ufw allow 1701
+ufw allow 1194
+ufw allow 5555
+
 ```
