@@ -26,4 +26,12 @@ mv vpnserver /usr/local && cd /usr/local/vpnserver/
 chmod 600 *
 chmod 700 vpnserver vpncmd
 
+
+# Starting vpnserver and set password
+sudo ./vpnserver start
+sudo ./vpncmd
+ServerPasswordSet
+^c
+
+
 ```
