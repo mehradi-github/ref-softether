@@ -49,4 +49,9 @@ EOF
 # Enabling IP forwarding
 echo net.ipv4.ip_forward = 1 | ${SUDO} tee -a /etc/sysctl.conf
 
+# Starting vpnserver.service 
+systemctl enable vpnserver
+systemctl start vpnserver
+
+systemctl status vpnserver
 ```
