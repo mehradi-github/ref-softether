@@ -1,9 +1,10 @@
-# Installing SoftEther Server and SoftEther Client on Ubuntu
+# Installing SoftEther
+Installing SoftEther Server and SoftEther Client on Ubuntu
 
-- [Installing SoftEther Server and SoftEther Client on Ubuntu](#installing-softether-server-and-softether-client-on-ubuntu)
+- [Installing SoftEther](#installing-softether)
   - [Installing SoftEther Server](#installing-softether-server)
 
-## Installing SoftEther Server
+## Installing SoftEther Server 
 
 ```sh
 sudo apt update && sudo apt upgrade -y
