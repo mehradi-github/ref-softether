@@ -31,7 +31,20 @@ chmod 700 vpnserver vpncmd
 sudo ./vpnserver start
 sudo ./vpncmd
 ServerPasswordSet
-^c
+
+# Creating vpnserver.service in /lib/systemd/system/
+Ctrl+C
+sudo cat >> /lib/systemd/system/vpnserver.service << EOF
+[Unit]
+Description=SoftEther VPN Server
+After=network.target
+[Service]
+Type=forking
+ExecStart=/usr/local/vpnserver/vpnserver start
+ExecStop=/usr/local/vpnserver/vpnserver stop
+[Install]
+WantedBy=multi-user.target
+EOF
 
 
 ```
