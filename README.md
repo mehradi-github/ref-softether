@@ -46,5 +46,7 @@ ExecStop=/usr/local/vpnserver/vpnserver stop
 WantedBy=multi-user.target
 EOF
 
+# Enabling IP forwarding
+echo net.ipv4.ip_forward = 1 | ${SUDO} tee -a /etc/sysctl.conf
 
 ```
