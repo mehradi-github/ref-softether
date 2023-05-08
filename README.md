@@ -20,5 +20,10 @@ cd vpnserver
 make
 cd ..
 
+# Moving vpnserver to /usr/local and change permissions
+mv vpnserver /usr/local && cd /usr/local/vpnserver/
+
+chmod 600 *
+chmod 700 vpnserver vpncmd
 
 ```
