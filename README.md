@@ -78,7 +78,11 @@ chmod 700 vpn*
 
 ./vpncmd
 2
+# Create and enable Nic
 VPN Client> NicCreate NAME
 VPN Client> NicEnable NAME
 
+# Create Account and set password
+VPN Client> AccountCreate vacc
+VPN Client> AccountPassword vacc
 ```
