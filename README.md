@@ -108,5 +108,10 @@ sudo ifconfig
 dhclient vpn_NICNAME
 
 
+# View Network Routing Table 
+sudo netstat -rn
+ip route
+ip r
+
 
 ```
