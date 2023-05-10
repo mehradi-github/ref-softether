@@ -74,5 +74,7 @@ cd /usr/local/vpnclient
 chmod 600 *
 chmod 700 vpn*
 
+./vpnclient start
+
 
 ```
