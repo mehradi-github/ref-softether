@@ -3,6 +3,7 @@ Installing SoftEther Server and SoftEther Client on Ubuntu
 
 - [Installing SoftEther](#installing-softether)
   - [Installing SoftEther Server](#installing-softether-server)
+  - [Installing SoftEther Client](#installing-softether-client)
 
 ## Installing SoftEther Server 
 
@@ -61,5 +62,17 @@ ufw allow 500,4500/udp
 ufw allow 1701
 ufw allow 1194
 ufw allow 5555
+
+```
+
+## Installing SoftEther Client
+
+```sh
+clinet : https://anuradha-15.medium.com/installation-guide-of-softether-vpn-client-on-linux-54a405a0ae2c
+mv vpnclient /usr/local/
+cd /usr/local/vpnclient
+chmod 600 *
+chmod 700 vpn*
+
 
 ```
