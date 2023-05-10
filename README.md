@@ -92,4 +92,13 @@ VPN Client> AccountConnect NAME
 # VPN Client> AccountDisconnect NAME
 VPN Client> AccountStatusGet NAME
 VPN Client> AccountList
+VPN Client> ctrl+C
+
+# Enabling IP forwarding
+cat /proc/sys/net/ipv4/ip_forward
+vi /etc/sysctl.conf
+net.ipv4.ip_forward=1
+sysctl -p
+
+
 ```
