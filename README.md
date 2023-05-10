@@ -83,6 +83,13 @@ VPN Client> NicCreate NAME
 VPN Client> NicEnable NAME
 
 # Create Account and set password
-VPN Client> AccountCreate vacc
-VPN Client> AccountPassword vacc
+VPN Client> AccountCreate NAME
+VPN Client> AccountPassword NAME
+
+
+# Connect account
+VPN Client> AccountConnect NAME
+# VPN Client> AccountDisconnect NAME
+VPN Client> AccountStatusGet NAME
+VPN Client> AccountList
 ```
