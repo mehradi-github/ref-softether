@@ -69,6 +69,9 @@ ufw allow 5555
 
 ```sh
 clinet : https://anuradha-15.medium.com/installation-guide-of-softether-vpn-client-on-linux-54a405a0ae2c
+cd vpnclient 
+make
+cd .. 
 mv vpnclient /usr/local/
 cd /usr/local/vpnclient
 chmod 600 *
@@ -79,18 +82,18 @@ chmod 700 vpn*
 ./vpncmd
 2
 # Create and enable Nic
-VPN Client> NicCreate NAME
-VPN Client> NicEnable NAME
+VPN Client> NicCreate NICNAME
+VPN Client> NicEnable NICNAME
 
 # Create Account and set password
-VPN Client> AccountCreate NAME
-VPN Client> AccountPassword NAME
+VPN Client> AccountCreate ACCNAME
+VPN Client> AccountPassword ACCNAME
 
 
 # Connect account
-VPN Client> AccountConnect NAME
-# VPN Client> AccountDisconnect NAME
-VPN Client> AccountStatusGet NAME
+VPN Client> AccountConnect ACCNAME
+# VPN Client> AccountDisconnect ACCNAME
+VPN Client> AccountStatusGet ACCNAME
 VPN Client> AccountList
 VPN Client> ctrl+C
 
@@ -99,6 +102,11 @@ cat /proc/sys/net/ipv4/ip_forward
 vi /etc/sysctl.conf
 net.ipv4.ip_forward=1
 sysctl -p
+
+sudo apt install net-tools
+sudo ifconfig
+dhclient vpn_NICNAME
+
 
 
 ```
