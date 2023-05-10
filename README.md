@@ -113,5 +113,8 @@ sudo netstat -rn
 ip route
 ip r
 
+ip route add $IP_VPN_PUBLIC/32 via $IP_INTERNET_BOX dev $LOCAL_INTERFACE
+ip route del default
+ip route add default via $IP_VPN_PRIVATE dev $VPN_INTERFACE
 
 ```
