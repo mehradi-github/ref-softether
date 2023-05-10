@@ -76,5 +76,9 @@ chmod 700 vpn*
 
 ./vpnclient start
 
+./vpncmd
+2
+VPN Client> NicCreate NAME
+VPN Client> NicEnable NAME
 
 ```
